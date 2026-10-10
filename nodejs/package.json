@@ -1,0 +1,31 @@
+{
+  "name": "quigent-voice-agent-quickstart-node",
+  "version": "1.0.0",
+  "description": "Quigent Voice AI Quickstart and Webhook Starter in TypeScript",
+  "main": "dist/webhook_server.js",
+  "scripts": {
+    "dispatch": "ts-node outbound_call.ts",
+    "dev": "ts-node-dev --respawn --transpile-only webhook_server.ts",
+    "build": "tsc"
+  },
+  "keywords": [
+    "quigent",
+    "voice-ai",
+    "telephony",
+    "sip-trunking",
+    "conversational-ai"
+  ],
+  "author": "Quigent Engineering <amit@quigent.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.24",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  }
+}
